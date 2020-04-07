@@ -34,3 +34,10 @@ with open('test.txt', 'r+') as f:
         fw.write('5) 5th Line\n')
         fw.write('6) 6th Line\n')
         fw.write(f.read())
+
+with open('eye.jpg', 'rb') as rf:
+    with open('eye_copy.jpg', 'wb') as wf:
+        chunk = rf.read(1024)
+        while len(chunk) > 0:
+            wf.write(chunk)
+            chunk = rf.read(1024)
