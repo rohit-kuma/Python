@@ -18,8 +18,6 @@ import calendar
 print(datetime.date.today())
 print(calendar.isleap(2020))
 
-import os
-print(os.getcwd())
-print(os.__file__)
+
 
 
